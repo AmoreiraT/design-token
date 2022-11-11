@@ -5,7 +5,7 @@ import { UpdateGetDesignTokenDto } from './dto/update-get-design-token.dto';
 
 @Controller('get-design-token')
 export class GetDesignTokenController {
-  constructor(private readonly getDesignTokenService: GetDesignTokenService) {}
+  constructor(private readonly getDesignTokenService: GetDesignTokenService) { }
 
   @Post()
   create(@Body() createGetDesignTokenDto: CreateGetDesignTokenDto) {
@@ -15,6 +15,10 @@ export class GetDesignTokenController {
   @Get()
   findAll() {
     return this.getDesignTokenService.findAll();
+  }
+  @Get()
+  getDesignToken() {
+    return this.getDesignTokenService.getDesignToken();
   }
 
   @Get(':id')

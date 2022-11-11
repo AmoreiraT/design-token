@@ -6,7 +6,9 @@ import rochaDesignToken from '../rochaCalderon/design-tokens.tokens.json';
 
 @Injectable()
 export class GetDesignTokenService {
-  getDesignToken(): {} {
+  getDesignToken(): {
+
+  } {
     return rochaDesignToken;
   }
 

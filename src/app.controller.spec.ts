@@ -16,7 +16,7 @@ describe('AppController', () => {
 
   describe('root', () => {
     it('', () => {
-      expect(appController.getDesignToken()).toBe('Hello World!');
+      expect(appController.hi()).toBe('Hello World!');
     });
   });
 });

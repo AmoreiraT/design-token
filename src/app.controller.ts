@@ -6,7 +6,7 @@ export class AppController {
   constructor(private readonly appService: AppService) { }
 
   @Get()
-  getDesignToken(): {} {
-    return this.appService.getDesignToken();
+  hi(): {} {
+    return this.appService.hi();
   }
 }
