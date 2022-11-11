@@ -14,7 +14,7 @@ export class GetDesignTokenController {
 
   @Get()
   findAll() {
-    return this.getDesignTokenService.findAll();
+    return this.getDesignTokenService.getDesignToken();
   }
   @Get()
   getDesignToken() {
